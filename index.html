@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Advanced html</title>
+  </head>
+  <body>
+    <div class="navdiv">
+      <a href="#" class="active">Home</a>
+      <a href="#image">Image</a>
+      <a href="#contacts">Contacts</a>
+      <a href="#form">Form</a>
+    </div>
+    <header>
+      <h1>Welcome to my page</h1>
+    </header>
+    <hr>
+    <main>
+      <section id="image">
+        <img src="https://images.pexels.com/photos/24035632/pexels-photo-24035632/free-photo-of-view-of-the-front-of-a-blue-ford-mustang-fastback.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="A beautiful classic blue American vehycle" width="90%" height="80%">
+      </section>
+      <section id="contacts">
+        <table>
+          <caption><u>Contacts List</u></caption>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Address</th>
+              <th>Mobile</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Ali Abdi</td>
+              <td>wgt765</td>
+              <td>0**********</td>
+              <td>aliabdi_254@yahoo.com</td>
+            </tr>
+            <tr>
+              <td>John Doe</td>
+              <td>0000</td>
+              <td>02*********</td>
+              <td>john@example.com</td>
+            </tr>
+            <tr>
+              <td>Jane Doe</td>
+              <td>-----</td>
+              <td>03*********</td>
+              <td>jane@example.com</td>
+            </tr>
+            <tr>
+              <td>Doe</td>
+              <td>00--</td>
+              <td>023********</td>
+              <td>doe@example.com</td>
+            </tr>
+            <tr>
+              <td>Jane John</td>
+              <td>--00</td>
+              <td>032*******</td>
+              <td>janejohn@example.com</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <form class="form" id="form">
+        <h2>Form</h2>
+
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" class="input" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" class="input" required>
+        
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" class="input" required>
+        
+        <label for="date">Date</label>
+        <input type="date" id="date" name="date" class="input" required>
+        
+        <label>Gender</label>
+        <div class="radio-group">
+          <label for="male">
+            <input type="radio" id="male" name="gender">Male
+          </label>
+          <label for="female">
+            <input type="radio" id="female" name="gender">Female
+          </label>
+        </div>
+
+        <label for="country">Country</label>
+        <select name="country" id="country" required>
+          <option value="">Select</option>
+          <option value="kenya">Kenya</option>
+          <option value="uganda">Uganda</option>
+          <option value="tz">Tanzania</option>
+        </select>
+        
+        <div class="checkbox">
+          <input type="checkbox" required>
+          <label>I agree to the Terms and Conditions
+          </label>
+        </div>        
+        
+        <button type="submit">Submit</botton>         
+      </form>
+    </main>
+    <hr>
+    <footer>
+      <p>&copy; 2025 Advanced html. All rights reserved.
+    </footer>
+  </body>
+</html>
